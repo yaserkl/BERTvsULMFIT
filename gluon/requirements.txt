@@ -1,0 +1,6 @@
+mxnet-cu90mkl
+gluonnlp
+scikit-learn
+matplotlib
+seaborn
+
