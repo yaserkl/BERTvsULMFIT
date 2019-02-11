@@ -1,0 +1,4 @@
+fire
+fastai==0.7
+torchtext==0.2.3
+spacy
