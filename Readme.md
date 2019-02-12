@@ -8,4 +8,4 @@
 
 Run [download.sh](download.sh) to download the datasets.
 
-Run [prepare_datasets.py](prepare_dataset.py) notebook to prepare the datasets.
+Run [prepare_datasets.py](prepare_datasets.py) notebook to prepare the datasets.
