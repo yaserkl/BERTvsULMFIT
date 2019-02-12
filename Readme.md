@@ -19,9 +19,9 @@ Bert                       | F1-score | Precision | Recall | Accuracy | Error Ra
 20ng                       |   91.24  |   91.46   |  91.13 |   91.04  |   
 IMDB                       |   88.59  |   88.61   |  88.62 |   88.6   |
 Reuters 21578 (R8)         |   94.38  |   93.62   |  95.64 |   98.12  |
-Reuters 21578 (R52)        |   73.80  |   73.48   |  76.01 |   96.35  |    20.70
-Ohsumed (all docs)         |   70.45  |   73.97   |  68.84 |  79.30   |
-Ohsumed (first 20k docs)   | 83.5     | 90.1      |        |
+Reuters 21578 (R52)        |   73.80  |   73.48   |  76.01 |   96.35  |    
+Ohsumed (all docs)         |   70.45  |   73.97   |  68.84 |  79.30   |    20.70
+Ohsumed (first 20k docs)   | 83.5     | 90.1      |        |          |
 
 
 ### 2.2 ULMFit
