@@ -9,3 +9,14 @@
 Run [download.sh](download.sh) to download the datasets.
 
 Run [prepare_datasets.py](prepare_datasets.py) notebook to prepare the datasets.
+
+### 2. Results
+
+Bert                       | F1-score | Precision | Recall | Accuracy
+-------------------------- | :------: | :-------: | :----: | :------:
+20ng                       |   0.91   |   0.915   |  0.911 |   0.91
+IMDB                       | 86.0     | 91.7      |        |
+Reuters 21578 (R8)         | **85.1** | **91.8**  |        |
+Reuters 21578 (R52)        | **85.1** | **91.8**  |        |
+Ohsumed (all docs)         | 83.5     | 90.1      |        |
+Ohsumed (first 20k docs)   | 83.5     | 90.1      |        |
