@@ -37,6 +37,7 @@ cd ulmfit
 unzip fastai-0.7.0.zip
 cd fastai-0.7.0
 python setup.py install
+rm -rf fastai-0.7.0
 cd $current
 
 python -m spacy download en

@@ -6,7 +6,7 @@
 * Python 3.6
 * pip install -r requirements.txt
 
-Run [download.sh](download.sh) to download the datasets.
+Run [setup.sh](setup.sh) to download the datasets.
 
 Run [prepare_datasets.py](prepare_datasets.py) notebook to prepare the datasets.
 
