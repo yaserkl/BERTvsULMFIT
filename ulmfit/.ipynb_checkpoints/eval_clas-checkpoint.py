@@ -36,7 +36,7 @@ def eval_clas(dir_path, cuda_id, lm_id='', clas_id=None, bs=64, backwards=False,
     clas_id = clas_id if clas_id == '' else f'{clas_id}_'
     final_clas_file = f'{PRE}{clas_id}clas_1'
     lm_file = f'{PRE}{lm_id}lm_enc'
-    lm_path = working_path / 'models' / f'{lm_file}.h5'
+    lm_path = dir_path / 'models' / f'{lm_file}.h5'
     assert lm_path.exists(), f'Error: {lm_path} does not exist.'
 
     bptt,em_sz,nh,nl = 70,400,1150,3
