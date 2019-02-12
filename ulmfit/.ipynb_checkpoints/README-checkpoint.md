@@ -1,6 +1,20 @@
-## Instructions
+## 1. Instructions
 
-### 0. Preparing Wikipedia
+### 1.1 Entry Point
+
+Use the following sample command to run all the required modules:
+This command will first ask to download, parse, and pretrain the wikipedia dataset using ULMFit and they start fine-tuning on the target dataset.
+If you already have a pre-trained wiki model, simply choose n|N for the first question and make sure you pass the right directory for the pre-trained wikipedia model.
+
+```
+bash run.sh ~/working_dir/classification/files/imdb/ ~/working_dir/classification/models/ulmfit/imdb/ ~/working_dir/classification/files/wiki/en/ imdb
+```
+
+## 2. Detailed Instruction
+
+This is mostly borrowed from [fastai code](https://github.com/fastai/fastai/tree/master/courses/dl2/imdb_scripts) which is written for imdb sentiment classification.
+
+### 2.1 Preparing Wikipedia
 
 If you want to train your own language model on a Wikipedia in your chosen language,
 run `prepare_wiki.sh`. The script will ask for a language and will then
@@ -17,7 +31,7 @@ where `LANG` is the language of the Wikipedia. The prepared files are stored in
 classification datasets. By default, `train.csv` contains around 100 million tokens
 and `val.csv` is 10% the size of `train.csv`.
 
-### 1. Tokenization
+### 2.2 Tokenization
 
 Run `create_toks.py` to tokenize the input texts.
 
@@ -43,7 +57,7 @@ in a `tmp` in the above path in the following files:
 `tok_trn.npy`, `tok_val.npy`, `lbl_trn.npy`, and `lbl_val.npy`.
 In addition, a joined corpus containing white space-separated tokens is produced in `tmp/joined.txt`.
 
-### 2. Mapping tokens to ids
+### 2.3 Mapping tokens to ids
 
 Run `tok2id.py` to map the tokens in the `tok_trn.npy` and `tok_val.npy` files to ids.
 
@@ -58,7 +72,7 @@ tok2id.py --prefix PREFIX [--max-vocab MAX_VOCAB] [--min-freq MIN_FREQ]
 - `MAX_VOCAB`: the maximum vocabulary size
 - `MIN_FREQ`: the minimum frequency of words that should be kept
 
-### (3a. Pretrain the Wikipedia language model)
+### (2.4.a. Pretrain the Wikipedia language model)
 
 Before fine-tuning the language model, you can run `pretrain_lm.py` to create a
 pre-trained language model using WikiText-103 (or whatever base corpus you prefer).
@@ -81,7 +95,7 @@ pretrain_lm.py --dir-path DIR_PATH --cuda-id CUDA_ID [--cl CL] [--bs BS] [--back
 
 You might have to adapt the learning rate and the # of epochs to maximize performance.
 
-### 3b. Fine-tune the LM
+### 2.4.b. Fine-tune the LM
 
 Alternatively, you can download the pre-trained models [here](http://files.fast.ai/models/wt103/). Before,
 create a directory `wt103`. In `wt103`, create a `models` and a `tmp` folder. Save the model files
@@ -120,7 +134,7 @@ finetune_lm.py --dir-path DIR_PATH --pretrain-path PRETRAIN_PATH [--cuda-id CUDA
 The language model is fine-tuned using warm-up reverse annealing and triangular learning rates. For IMDb,
 we set `--cl`, the number of epochs to `50` and used a learning rate `--lr` of `4e-3`.
 
-### 4. Train the classifier
+### 2.5 Train the classifier
 
 Run `train_clas.py` to train the classifier on top of the fine-tuned language model with gradual unfreezing,
 discriminative fine-tuning, and slanted triangular learning rates.
@@ -154,7 +168,7 @@ train_clas.py --dir-path DIR_PATH --cuda-id CUDA_ID [--lm-id LM_ID] [--clas-id C
 
 For fine-tuning the classifier on IMDb, we set `--cl`, the number of epochs to `50`.
 
-### 5. Evaluate the classifier
+### 2.6 Evaluate the classifier
 
 Run `eval_clas.py` to get the classifier accuracy and confusion matrix.
 
@@ -175,7 +189,7 @@ eval_clas.py --dir-path DIR_PATH --cuda-id CUDA_ID [--lm-id LM_ID] [--clas-id CL
 - `BACKWARDS`: whether a backwards LM is trained
 - `BPE`: whether we use byte-pair encoding (BPE)
 
-### 6. Try the classifier on text
+### 2.7 Try the classifier on text
 
 Run `predict_with_classifier.py` to predict against free text entry.
 

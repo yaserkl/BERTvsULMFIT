@@ -16,12 +16,12 @@ Run [prepare_datasets.py](prepare_datasets.py) notebook to prepare the datasets.
 
 Bert                       | F1-score | Precision | Recall | Accuracy | Error Rate
 -------------------------- | :------: | :-------: | :----: | :------: | :--------:
-20ng                       |   91.24  |   91.46   |  91.13 |   91.04  |   
-IMDB                       |   88.59  |   88.61   |  88.62 |   88.6   |
-Reuters 21578 (R8)         |   94.38  |   93.62   |  95.64 |   98.12  |
-Reuters 21578 (R52)        |   73.80  |   73.48   |  76.01 |   96.35  |    
-Ohsumed (all docs)         |   70.45  |   73.97   |  68.84 |  79.30   |    20.70
-Ohsumed (first 20k docs)   | 83.5     | 90.1      |        |          |
+20ng                       |   91.24  |   91.46   |  91.13 |   91.04  |    8.96
+IMDB                       |   88.59  |   88.61   |  88.62 |   88.6   |    11.4
+Reuters 21578 (R8)         |   94.38  |   93.62   |  95.64 |   98.12  |    1.88
+Reuters 21578 (R52)        |   73.80  |   73.48   |  76.01 |   96.35  |    3.65
+Ohsumed (all docs)         |   70.45  |   73.97   |  68.84 |   79.30  |    20.70
+Ohsumed (first 20k docs)   |   56.52  |   61.49   |  56.04 |   71.04  |    28.96
 
 
 ### 2.2 ULMFit

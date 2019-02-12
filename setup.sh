@@ -30,3 +30,13 @@ wget http://ai.stanford.edu/~amaas/data/sentiment/aclImdb_v1.tar.gz
 tar xvfz aclImdb_v1.tar.gz
 
 cd $current
+
+#conda install gxx_linux-64
+
+cd ulmfit
+unzip fastai-0.7.0.zip
+cd fastai-0.7.0
+python setup.py install
+cd $current
+
+python -m spacy download en
