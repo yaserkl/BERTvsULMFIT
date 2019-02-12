@@ -9,6 +9,7 @@ mkdir -p $r8_out
 mkdir -p $r52_out
 mkdir -p $ohsumed_out
 mkdir -p $imdb_out
+current=$(pwd)
 
 cd $r8_out
 wget https://www.cs.umb.edu/~smimarog/textmining/datasets/r8-train-all-terms.txt
@@ -27,3 +28,5 @@ tar xvfz ohsumed-first-20000-docs.tar.gz
 cd $imdb_out
 wget http://ai.stanford.edu/~amaas/data/sentiment/aclImdb_v1.tar.gz
 tar xvfz aclImdb_v1.tar.gz
+
+cd $current
