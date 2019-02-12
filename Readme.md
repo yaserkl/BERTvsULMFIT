@@ -7,4 +7,5 @@
 * pip install -r requirements.txt
 
 Run [download.sh](download.sh) to download the datasets.
+
 Run [prep_data](prep_data.ipynb) notebook to prepare the datasets.
