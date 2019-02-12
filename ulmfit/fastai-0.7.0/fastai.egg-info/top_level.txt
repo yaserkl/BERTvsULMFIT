@@ -1,3 +1,0 @@
-fastai
-fastai/models
-fastai/models/cifar10
