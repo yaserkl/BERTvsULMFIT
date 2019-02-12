@@ -6,4 +6,5 @@
 * Python 3.6
 * pip install -r requirements.txt
 
-Run [prep_data](prep_data.ipynb) notebook to download and prepare datasets.
+Run [download.sh](download.sh) to download the datasets.
+Run [prep_data](prep_data.ipynb) notebook to prepare the datasets.

@@ -126,7 +126,7 @@ def parse_ohsumed_all(data_dir):
 
 
 def parse_ohsumed_first(train_dir, test_dir):
-    # download files from: http://disi.unitn.it/moschitti/corpora/ohsumed-all-docs.tar.gz
+    # download files from: http://disi.unitn.it/moschitti/corpora/ohsumed-first-20000-docs.tar.gz
 
     x_train, y_train = ohsumed_reader(train_dir)
     x_test, y_test = ohsumed_reader(test_dir)
