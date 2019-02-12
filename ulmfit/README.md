@@ -3,7 +3,9 @@
 ### 1.1 Entry Point
 
 Use the following sample command to run all the required modules:
+
 This command will first ask to download, parse, and pretrain the wikipedia dataset using ULMFit and they start fine-tuning on the target dataset.
+
 If you already have a pre-trained wiki model, simply choose n|N for the first question and make sure you pass the right directory for the pre-trained wikipedia model.
 
 ```
