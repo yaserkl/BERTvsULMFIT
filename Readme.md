@@ -19,10 +19,10 @@ For instruction regarding running each model go the respective model directory.
 
 The [models](models) directory holds the result of these experiments.
 
-|             BERT Results on 20 Newsgroup            ||
-     Confusion Matrix      |  Sankey Plot              |
-:-------------------------:|:-------------------------:|
-<img src="https://github.com/yaserkl/BERTvsULMFIT/raw/master/models/bert/20ng/cm_20ng.png" alt="20 Newsgroup Confusion Matrix">  |  <img src="https://github.com/yaserkl/BERTvsULMFIT/raw/master/models/bert/20ng/sankey_20ng.png" alt="20 Newsgroup Sankey Plot">|
+
+Bert 20NG Confusion Matrix |  Bert 20NG Sankey Plot
+:-------------------------:|:-------------------------:
+<img src="https://github.com/yaserkl/BERTvsULMFIT/raw/master/models/bert/20ng/cm_20ng.png" alt="20 Newsgroup Confusion Matrix">  |  <img src="https://github.com/yaserkl/BERTvsULMFIT/raw/master/models/bert/20ng/sankey_20ng.png" alt="20 Newsgroup Sankey Plot">
 
 
 
