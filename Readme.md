@@ -22,7 +22,7 @@ The [models](models) directory holds the result of these experiments.
 
 Solarized dark             |  Solarized Ocean
 :-------------------------:|:-------------------------:
-<img src="https://github.com/yaserkl/BERTvsULMFIT/raw/master/models/bert/20ng/cm_20ng.png" alt="20 Newsgroup Confusion Matrix" width="500" height="400">  |  <img src="https://github.com/yaserkl/BERTvsULMFIT/raw/master/models/bert/20ng/sankey_20ng.png" alt="20 Newsgroup Sankey Plot" width="350" height="350">
+<img src="https://github.com/yaserkl/BERTvsULMFIT/raw/master/models/bert/20ng/cm_20ng.png" alt="20 Newsgroup Confusion Matrix">  |  <img src="https://github.com/yaserkl/BERTvsULMFIT/raw/master/models/bert/20ng/sankey_20ng.png" alt="20 Newsgroup Sankey Plot">
 
 
 
