@@ -18,6 +18,9 @@ For instruction regarding running each model go the respective model directory.
 The [models](models) directory holds the result of these experiments.
 
 
+.. image:: models/bert/20ng/cm_20ng.png
+    :target: models/bert/20ng/cm_20ng.png
+
 ## 2. Results
 
 ### 2.1 BERT
