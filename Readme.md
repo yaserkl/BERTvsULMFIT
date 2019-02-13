@@ -13,6 +13,11 @@ Run [setup.sh](setup.sh) to download the datasets and install all the required p
 
 Run [prepare_datasets.py](prepare_datasets.py) notebook to prepare the datasets.
 
+For instruction regarding running each model go the respective model directory.
+
+The [models](models) directory holds the result of these experiments.
+
+
 ## 2. Results
 
 ### 2.1 BERT
