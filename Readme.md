@@ -20,7 +20,7 @@ For instruction regarding running each model go the respective model directory.
 The [models](models) directory holds the result of these experiments.
 
 
-Solarized dark             |  Solarized Ocean
+20ng Confusion Matrix      |  20ng Sankey Plot
 :-------------------------:|:-------------------------:
 <img src="https://github.com/yaserkl/BERTvsULMFIT/raw/master/models/bert/20ng/cm_20ng.png" alt="20 Newsgroup Confusion Matrix">  |  <img src="https://github.com/yaserkl/BERTvsULMFIT/raw/master/models/bert/20ng/sankey_20ng.png" alt="20 Newsgroup Sankey Plot">
 
