@@ -21,3 +21,6 @@ mizani
 patsy
 statsmodels
 tornado
+holoviews
+bokeh
+selenium

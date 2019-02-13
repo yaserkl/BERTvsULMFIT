@@ -41,3 +41,19 @@ rm -rf fastai-0.7.0
 cd $current
 
 python -m spacy download en
+
+# install phantomjs for plotting
+# sudo npm install -g phantomjs-prebuilt
+# alternative option for user:
+
+wget https://bitbucket.org/ariya/phantomjs/downloads/phantomjs-2.1.1-linux-x86_64.tar.bz2
+tar xjf phantomjs-2.1.1-linux-x86_64.tar.bz2
+cd phantomjs-2.1.1-linux-x86_64
+
+export BOKEH_PHANTOMJS_PATH=$(pwd)/bin/phantomjs
+export PATH=$(pwd)/bin:$PATH
+
+cd ..
+rm phantomjs-2.1.1-linux-x86_64.tar.bz2
+
+cd $current
