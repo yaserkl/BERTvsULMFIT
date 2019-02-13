@@ -6,8 +6,10 @@
 
 * CUDA 9.0
 * Python 3.6
+* `bash setup.sh`
 
-Run [setup.sh](setup.sh) to download the datasets.
+
+Run [setup.sh](setup.sh) to download the datasets and install all the required packages.
 
 Run [prepare_datasets.py](prepare_datasets.py) notebook to prepare the datasets.
 
