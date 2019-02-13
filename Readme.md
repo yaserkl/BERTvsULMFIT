@@ -6,7 +6,6 @@
 
 * CUDA 9.0
 * Python 3.6
-* pip install -r requirements.txt
 
 Run [setup.sh](setup.sh) to download the datasets.
 

@@ -31,6 +31,8 @@ tar xvfz aclImdb_v1.tar.gz
 
 cd $current
 
+pip install -r requirements.txt
+
 #conda install gxx_linux-64
 
 cd ulmfit
