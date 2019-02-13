@@ -20,8 +20,8 @@ For instruction regarding running each model go the respective model directory.
 The [models](models) directory holds the result of these experiments.
 
 
-![alt text](http://https://github.com/yaserkl/BERTvsULMFIT/models/bert/20ng/cm_20ng.png)
-![alt text](http://https://github.com/yaserkl/BERTvsULMFIT/models/bert/20ng/sankey_20ng.png)
+![alt text](https://github.com/yaserkl/BERTvsULMFIT/raw/master/models/bert/20ng/cm_20ng.png)
+![alt text](https://github.com/yaserkl/BERTvsULMFIT/raw/master/models/bert/20ng/sankey_20ng.png)
 
 
 ## 2. Results
