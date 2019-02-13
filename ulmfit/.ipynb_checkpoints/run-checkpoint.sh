@@ -15,11 +15,11 @@ n|N ) echo "Skipping Pre-training on Wikipedia";;
 * ) echo "Invalid answer"; exit 1;;
 esac
 
-#python create_toks.py --dir-path $INDIR --working-path $WORKDIR
-#python tok2id.py --dir-path $WORKDIR 50000 5
+python create_toks.py --dir-path $INDIR --working-path $WORKDIR
+python tok2id.py --dir-path $WORKDIR 50000 5
 
-#python finetune_lm.py --dir-path $WORKDIR --pretrain-path $WIKIDIR --cl 2 --bs 50 --lm-id pretrain_wiki --pretrain-id '' --cuda-id 0
+python finetune_lm.py --dir-path $WORKDIR --pretrain-path $WIKIDIR --cl 2 --bs 50 --lm-id pretrain_wiki --pretrain-id '' --cuda-id 0
 
-#python train_clas.py --dir-path $WORKDIR --cuda-id 0 --lm-id pretrain_wiki --clas-id $NAME --cl 50
+python train_clas.py --dir-path $WORKDIR --cuda-id 0 --lm-id pretrain_wiki --clas-id $NAME --cl 50
 
 python eval_clas.py --dir-path $WORKDIR --cuda-id 0 --lm-id pretrain_wiki --clas-id $NAME

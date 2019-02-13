@@ -14,14 +14,14 @@ Run [prepare_datasets.py](prepare_datasets.py) notebook to prepare the datasets.
 
 ### 2.1 BERT
 
-Bert                       | F1-score | Precision | Recall  | Accuracy | Error Rate
+Bert (MXNet)               | F1-score | Precision | Recall  | Accuracy | Error Rate
 -------------------------- | :------: | :-------: | :----:  | :------: | :--------:
 20ng                       |   91.24  |   91.46   |  91.13  |   91.04  |    8.96
 IMDB                       |   88.59  |   88.61   |  88.62  |   88.6   |    11.4
 Reuters 21578 (R8)         |   94.38  |   93.62   |  95.64  |   98.12  |    1.88
 Reuters 21578 (R52)        | **73.80**|   73.48   |**76.01**|   96.35  |    3.65
 Ohsumed (all docs)         |   70.45  |   73.97   |  68.84  |   79.30  |    20.70
-Ohsumed (first 20k docs)   |   56.52  |   61.49   |  56.04  |   71.04  |    28.96
+Ohsumed (first 20k docs)   | **56.52**| **61.49** |**56.04**| **71.04**|  **28.96**
 
 
 ### 2.2 ULMFit
@@ -33,4 +33,4 @@ IMDB                       |**91.92** | **91.96** |**91.96**| **91.92**|  **8.08
 Reuters 21578 (R8)         | **94.79**| **94.07** |**96.12**| **98.18**|  **1.82**
 Reuters 21578 (R52)        |   73.77  | **75.47** |  75.96  | **96.43**|  **3.57**
 Ohsumed (all docs)         |**74.82** | **75.01** |**75.47**| **81.96**|  **18.04**
-Ohsumed (first 20k docs)   |   56.52  |   61.49   |  56.04  |   71.04  |    28.96
+Ohsumed (first 20k docs)   |   43.76  |   44.46   |  45.49  |   62.5   |    37.5
