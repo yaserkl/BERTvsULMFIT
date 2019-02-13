@@ -20,8 +20,8 @@ For instruction regarding running each model go the respective model directory.
 The [models](models) directory holds the result of these experiments.
 
 
-<img src="https://github.com/yaserkl/BERTvsULMFIT/raw/master/models/bert/20ng/cm_20ng.png" alt="20 Newsgroup Confusion Matrix" width="750" height="500">
-<img src="https://github.com/yaserkl/BERTvsULMFIT/raw/master/models/bert/20ng/sankey_20ng.png" alt="20 Newsgroup Sankey Plot" width="750" height="750">
+<img src="https://github.com/yaserkl/BERTvsULMFIT/raw/master/models/bert/20ng/cm_20ng.png" alt="20 Newsgroup Confusion Matrix" width="300" height="200">
+<img src="https://github.com/yaserkl/BERTvsULMFIT/raw/master/models/bert/20ng/sankey_20ng.png" alt="20 Newsgroup Sankey Plot" width="350" height="350">
 
 
 
