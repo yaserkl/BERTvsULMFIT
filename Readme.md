@@ -23,6 +23,8 @@ The [models](models) directory holds the result of these experiments.
 ![alt text](https://github.com/yaserkl/BERTvsULMFIT/raw/master/models/bert/20ng/cm_20ng.png)
 ![alt text](https://github.com/yaserkl/BERTvsULMFIT/raw/master/models/bert/20ng/sankey_20ng.png)
 
+<img src="https://github.com/yaserkl/BERTvsULMFIT/raw/master/models/bert/20ng/cm_20ng.png" alt="20 Newsgroup Confusion Matrix" width="250" height="250">
+
 
 ## 2. Results
 
