@@ -70,7 +70,7 @@ def eval_clas(dir_path, cuda_id, lm_id='', clas_id=None, bs=64, backwards=False,
     acc = (val_lbls_sampled == predictions).mean()
     print('Accuracy =', acc, 'Confusion Matrix =')
     fig = print_results(val_lbls_sampled, predictions)
-    fig.savefig('{}/cm_{}.png'.format(dir_path, clas_id))
+    fig.savefig('{}/cm_{}.png'.format(dir_path, clas_id if clas_id[-1]!="_" else clas_id[0:-1]))
     print(confusion_matrix(val_lbls_sampled, predictions))
 
 if __name__ == '__main__': fire.Fire(eval_clas)
